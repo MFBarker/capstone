@@ -3,7 +3,19 @@
 
 lives=3;
 
-//Animation shortcuts
-var _anim_idle = "temp_player_idle";
-var _anim_death = "temp_player_death";
-var _anim_hurt = "temp_player_hurt";
+//Horizontal Movement
+movespd = 5;
+
+//Vertical Movement (tutorial 1)
+grav = 0.3;
+jumpheight = 7;
+vspd = 0;
+canJump = 0;
+canDoubleJump = false;
+
+
+/*
+TUTORIAL LINKS:
+1. "GameMaker Studio 2 - Jumping" by Caz Creates (https://www.youtube.com/watch?v=bhAewBxIUv4)
+
+*/

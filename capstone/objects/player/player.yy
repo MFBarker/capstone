@@ -21,7 +21,7 @@
   "physicsGroup": 1,
   "physicsKinematic": false,
   "physicsLinearDamping": 0.1,
-  "physicsObject": true,
+  "physicsObject": false,
   "physicsRestitution": 0.1,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -33,7 +33,7 @@
   ],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": true,
+  "solid": false,
   "spriteId": {
     "name": "spr_temp_player_idle",
     "path": "sprites/spr_temp_player_idle/spr_temp_player_idle.yy",
