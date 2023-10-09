@@ -1,7 +1,16 @@
 /// @description Initial Variables
-// You can write your code in this editor
 
+
+////////////
 lives=3;
+health = 100;
+
+//anim shortcuts
+player_idle = spr_temp_player_idle;
+player_run_L = spr_temp_player_run_left;
+player_run_R = spr_temp_player_run_right;
+player_jump = spr_temp_player_jump;
+player_death = spr_temp_player_death;
 
 //Horizontal Movement
 movespd = 5;

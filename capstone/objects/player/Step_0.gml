@@ -10,6 +10,7 @@ var keyJumpReleased = keyboard_check_released(vk_space);
 
 var isGrounded = place_meeting(x, y + 1,obj_wall);
 
+var isDead = (health == 0);
 
 //---------------------------
 //------------Horizontal Movement
@@ -71,24 +72,30 @@ if (canJump and keyJump) //normal jump
 //commit to move
 y += vspd;
 
-
-
-
-
 //------------------------
 //Animation
 if(keyLeft)
 {
-	sprite_index = spr_temp_player_run_left;
+	sprite_index = player_run_L;
 	
 }
 else if(keyRight)
 {
-	sprite_index = spr_temp_player_run_right;
+	sprite_index = player_run_R;
 }
 else
 {
-	sprite_index = spr_temp_player_idle;
+	sprite_index = player_idle;
+}
+
+if(keyJump)
+{
+	sprite_index = player_jump;
+}
+
+if(isDead)
+{
+	sprite_index = player_death;
 }
 
 //exit if escape key (DEBUG ONLY)
