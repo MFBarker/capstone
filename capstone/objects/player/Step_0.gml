@@ -104,3 +104,9 @@ if(keyboard_check(vk_escape))
 	game_end();
 }
 
+//player tp when change room
+if(room_get_name(room) == "rm_hub" && the_last_room == "rm_tutorial")
+{
+	audio_play_sound(snd_test,50,true);
+
+}
