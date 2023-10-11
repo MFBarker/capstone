@@ -103,6 +103,11 @@ if(keyboard_check(vk_escape))
 {
 	game_end();
 }
+//tp back to hub (DEBUG ONLY)
+if(keyboard_check(ord("K")))
+{
+	room_goto(rm_hub);
+}
 
 //player tp when change room
 if(room_get_name(room) == "rm_hub" && the_last_room == "rm_tutorial")
