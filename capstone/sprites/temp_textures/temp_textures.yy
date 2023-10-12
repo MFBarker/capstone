@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "temp_textures",
-  "bbox_bottom": 511,
+  "bbox_bottom": 1023,
   "bbox_left": 0,
-  "bbox_right": 479,
+  "bbox_right": 959,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"46f2f3a8-0b12-43a0-8c80-531181e486dc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cbbc0052-f3c3-4b63-b408-8c0b4fe4f10a",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 512,
+  "height": 1024,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9ddce366-0ad9-4b24-9d87-5375c9e00ccf","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a2980a90-6b78-41a5-a3e2-4a4f71533acb","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"46f2f3a8-0b12-43a0-8c80-531181e486dc","path":"sprites/temp_textures/temp_textures.yy",},},},"Disabled":false,"id":"3080c7e8-b1c5-4ad1-a0b0-76e5a7d59aad","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"cbbc0052-f3c3-4b63-b408-8c0b4fe4f10a","path":"sprites/temp_textures/temp_textures.yy",},},},"Disabled":false,"id":"39f5088d-68d8-41d4-9c43-a7d81d81d6b1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 512,
+  "width": 1024,
 }

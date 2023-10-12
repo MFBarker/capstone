@@ -48,6 +48,8 @@ if(isGrounded) // on ground
 {
 	canJump = 10;
 	canDoubleJump = false;
+	
+	if(sprite_index != player_idle && !keyJump) sprite_index = player_idle;
 }
 else canJump -= 1;
 
@@ -58,7 +60,6 @@ if(canDoubleJump and keyJump) //double jump
 	vspd -= jumpheight;
 	canDoubleJump = false;
 	
-	if(sprite_index != spr_temp_player_jump) sprite_index = spr_temp_player_jump;
 }
 if (canJump and keyJump) //normal jump
 {
@@ -66,7 +67,7 @@ if (canJump and keyJump) //normal jump
 	canJump = 0;
 	canDoubleJump = true;
 	vspd -= jumpheight;
-	sprite_index = spr_temp_player_jump;
+	
 }
 
 //commit to move
@@ -76,18 +77,19 @@ y += vspd;
 //Animation
 if(keyLeft)
 {
-	sprite_index = player_run_L;
+	sprite_index = player_run_l;
 	
 }
 else if(keyRight)
 {
-	sprite_index = player_run_R;
+	sprite_index = player_run_r;
 }
-else
+else if (vk_nokey)
 {
 	sprite_index = player_idle;
 }
 
+//jump code animation
 if(keyJump)
 {
 	sprite_index = player_jump;
@@ -110,8 +112,8 @@ if(keyboard_check(ord("K")))
 }
 
 //player tp when change room
-if(room_get_name(room) == "rm_hub" && the_last_room == "rm_tutorial")
-{
-	audio_play_sound(snd_test,50,true);
+//if(room_get_name(room) == rm_hub && the_last_room == rm_tutorial)
+//{
+//	audio_play_sound(snd_test,50,true);
 
-}
+//}
