@@ -9,7 +9,6 @@
   "instanceCreationOrder": [
     {"name":"inst_6E414C61","path":"rooms/rm_cave/rm_cave.yy",},
     {"name":"inst_797EE280","path":"rooms/rm_cave/rm_cave.yy",},
-    {"name":"inst_69D6D724","path":"rooms/rm_cave/rm_cave.yy",},
     {"name":"inst_2FA467E5","path":"rooms/rm_cave/rm_cave.yy",},
     {"name":"inst_460D0B5B","path":"rooms/rm_cave/rm_cave.yy",},
     {"name":"inst_406C94D1","path":"rooms/rm_cave/rm_cave.yy",},
@@ -21,7 +20,6 @@
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"player","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_69D6D724","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2FA467E5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_llama","path":"objects/obj_llama/obj_llama.yy",},"properties":[],"rotation":0.0,"scaleX":4.0476193,"scaleY":3.8235292,"x":832.0,"y":640.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_460D0B5B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_shrine","path":"objects/obj_shrine/obj_shrine.yy",},"properties":[],"rotation":0.0,"scaleX":5.740741,"scaleY":5.571429,"x":1216.0,"y":576.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_D5B1EBE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"player","path":"objects/player/player.yy",},"properties":[],"rotation":0.0,"scaleX":5.6666665,"scaleY":5.6666665,"x":96.0,"y":640.0,},

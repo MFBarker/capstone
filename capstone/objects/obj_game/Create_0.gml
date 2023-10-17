@@ -17,3 +17,6 @@ view_visible[0] = true;
 //window_set_rectangle(_xpos, _ypos, 960, 540);
 
 //surface_resize(application_surface, 960, 540);
+
+//Textbox
+global.font_text = fnt_textbox;

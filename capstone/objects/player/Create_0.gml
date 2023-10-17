@@ -11,6 +11,7 @@ player_run_l = spr_temp_player_run_left;
 player_run_r = spr_temp_player_run_right;
 player_jump = spr_temp_player_jump;
 player_death = spr_temp_player_death;
+player_punch = spr_temp_player_punch;
 
 //Horizontal Movement
 movespd = 5;

@@ -1,7 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(keyboard_check(ord("E")))
+var _touching = place_meeting(x,y,player);
+
+if(_touching)
 {
-	audio_play_sound(snd_test,50,false);
+	//code goes here
 }
 

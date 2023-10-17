@@ -1,15 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_hub_interact_sign",
+  "name": "obj_pick_ups",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":69,"eventType":9,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Signs",
-    "path": "folders/Objects/Hub/Signs.yy",
+    "name": "Parents",
+    "path": "folders/Objects/Items/Parents.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -27,10 +27,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_hub_interact_sign",
-    "path": "sprites/spr_hub_interact_sign/spr_hub_interact_sign.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
