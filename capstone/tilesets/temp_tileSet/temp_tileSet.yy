@@ -23,8 +23,8 @@
     "path": "folders/Tile Sets.yy",
   },
   "spriteId": {
-    "name": "temp_textures",
-    "path": "sprites/temp_textures/temp_textures.yy",
+    "name": "temp_texture_64",
+    "path": "sprites/temp_texture_64/temp_texture_64.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {
@@ -1063,10 +1063,10 @@
   },
   "tileAnimationFrames": [],
   "tileAnimationSpeed": 15.0,
-  "tileHeight": 32,
+  "tileHeight": 64,
   "tilehsep": 0,
   "tilevsep": 0,
-  "tileWidth": 32,
+  "tileWidth": 64,
   "tilexoff": 0,
   "tileyoff": 0,
 }

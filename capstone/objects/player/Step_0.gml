@@ -12,6 +12,8 @@ var isGrounded = place_meeting(x, y + 1,obj_wall);
 
 var isDead = (health == 0);
 
+var keyCrouch = keyboard_check(ord("S")) || keyboard_check(vk_down);
+
 //---------------------------
 //------------Horizontal Movement
 
@@ -124,3 +126,16 @@ if(keyboard_check(ord("T")))
 	sprite_index = player_punch;
 }
 
+//Crouch
+if(keyCrouch)
+{
+	sprite_index = player_crouch_idle;
+	if (keyCrouch && keyLeft)
+	{
+		sprite_index = player_crouch_walk_left;
+	}
+	else if (keyCrouch && keyRight)
+	{
+		sprite_index = player_crouch_walk_right;
+	}
+}

@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Hub",
-    "path": "folders/Objects/Hub.yy",
+    "name": "Signs",
+    "path": "folders/Objects/Hub/Signs.yy",
   },
   "parentObjectId": null,
   "persistent": false,

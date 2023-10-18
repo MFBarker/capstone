@@ -32,8 +32,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "temp_player",
-    "path": "folders/Sprites/temp_player.yy",
+    "name": "basics",
+    "path": "folders/Sprites/temp_player/basics.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
