@@ -12,7 +12,13 @@ var isGrounded = place_meeting(x, y + 1,obj_wall);
 
 var isDead = (health == 0);
 
+//custom ones
+var keyPunch = keyboard_check(ord("T"));
 var keyCrouch = keyboard_check(ord("S")) || keyboard_check(vk_down);
+var keyHide = keyboard_check(ord("V"));
+var keyTP = keyboard_check(ord("K"));
+
+var keyInventory = keyboard_check(vk_tab);
 
 //---------------------------
 //------------Horizontal Movement
@@ -108,7 +114,7 @@ if(keyboard_check(vk_escape))
 	game_end();
 }
 //tp back to hub (DEBUG ONLY)
-if(keyboard_check(ord("K")))
+if(keyTP)
 {
 	room_goto(rm_hub);
 }
@@ -121,7 +127,7 @@ if(keyboard_check(ord("K")))
 //}
 
 //Attacks
-if(keyboard_check(ord("T")))
+if(keyPunch)
 {
 	sprite_index = player_punch;
 }
@@ -137,5 +143,16 @@ if(keyCrouch)
 	else if (keyCrouch && keyRight)
 	{
 		sprite_index = player_crouch_walk_right;
+	}
+}
+
+//hide (will change once the thing is able to be unlocked)
+if(keyHide)
+{
+	sprite_index = player_hide;
+	//restrict movement
+	if ((keyHide && keyLeft) || (keyHide && keyRight))
+	{
+		move = 0;
 	}
 }

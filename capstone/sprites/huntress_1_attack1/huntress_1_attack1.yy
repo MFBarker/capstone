@@ -30,7 +30,7 @@
   "origin": 0,
   "parent": {
     "name": "huntress",
-    "path": "folders/Sprites/huntress.yy",
+    "path": "folders/Sprites/Enemies/huntress.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

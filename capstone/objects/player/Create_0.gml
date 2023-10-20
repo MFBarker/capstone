@@ -1,10 +1,5 @@
 /// @description Initial Variables
 
-
-////////////
-lives=3;
-health = 100;
-
 //anim shortcuts
 player_idle = spr_temp_player_idle;
 player_run_l = spr_temp_player_run_left;
@@ -15,6 +10,7 @@ player_punch = spr_temp_player_punch;
 player_crouch_idle = spr_temp_player_crouch_idle;
 player_crouch_walk_left = spr_temp_player_crouch_walk_left;
 player_crouch_walk_right = spr_temp_player_crouch_walk_right;
+player_hide = spr_temp_player_hide;
 
 //Horizontal Movement
 movespd = 5;

@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_llama_tb",
-  "bbox_bottom": 33,
-  "bbox_left": 8,
-  "bbox_right": 25,
+  "bbox_bottom": 287,
+  "bbox_left": 68,
+  "bbox_right": 219,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -17,7 +17,7 @@
   ],
   "gridX": 1,
   "gridY": 1,
-  "height": 34,
+  "height": 288,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"083c6787-15d6-488c-aca4-ae7a93613e00","blendMode":0,"displayName":"Layer 1","isLocked":false,"opacity":100.0,"visible":true,},
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 34,
+  "width": 288,
 }

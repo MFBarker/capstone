@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_npc_tb",
-  "bbox_bottom": 33,
+  "bbox_bottom": 287,
   "bbox_left": 0,
-  "bbox_right": 33,
+  "bbox_right": 287,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -17,7 +17,7 @@
   ],
   "gridX": 1,
   "gridY": 1,
-  "height": 34,
+  "height": 288,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"992fa88b-3797-4698-856c-7de59839336d","blendMode":0,"displayName":"head","isLocked":false,"opacity":100.0,"visible":true,},
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 34,
+  "width": 288,
 }

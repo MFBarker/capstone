@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_temp_player_jump",
-  "bbox_bottom": 39,
+  "bbox_bottom": 41,
   "bbox_left": 11,
   "bbox_right": 30,
   "bbox_top": 10,

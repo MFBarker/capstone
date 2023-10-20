@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_temp_player_crouch_idle",
-  "bbox_bottom": 37,
+  "bbox_bottom": 39,
   "bbox_left": 11,
   "bbox_right": 40,
   "bbox_top": 19,
