@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_temp_player_run_left",
-  "bbox_bottom": 38,
+  "bbox_bottom": 39,
   "bbox_left": 11,
   "bbox_right": 38,
   "bbox_top": 9,

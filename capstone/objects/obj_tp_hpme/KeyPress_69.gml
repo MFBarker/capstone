@@ -4,7 +4,11 @@ var _touching = place_meeting(x,y,player);
 
 if(_touching)
 {
-	//item goes into inventory
-	audio_play_sound(snd_test,50,false);
+	if(text_id != -1)
+	{
+		create_textbox(text_id);
+	}
 }
+
+
 

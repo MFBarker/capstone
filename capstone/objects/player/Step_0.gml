@@ -16,7 +16,7 @@ var isDead = (health == 0);
 var keyPunch = keyboard_check(ord("T"));
 var keyCrouch = keyboard_check(ord("S")) || keyboard_check(vk_down);
 var keyHide = keyboard_check(ord("V"));
-var keyTP = keyboard_check(ord("K"));
+
 
 var keyInventory = keyboard_check(vk_tab);
 
@@ -108,16 +108,8 @@ if(isDead)
 	sprite_index = player_death;
 }
 
-//exit if escape key (DEBUG ONLY)
-if(keyboard_check(vk_escape))
-{
-	game_end();
-}
-//tp back to hub (DEBUG ONLY)
-if(keyTP)
-{
-	room_goto(rm_hub);
-}
+
+
 
 //player tp when change room
 //if(room_get_name(room) == rm_hub && the_last_room == rm_tutorial)

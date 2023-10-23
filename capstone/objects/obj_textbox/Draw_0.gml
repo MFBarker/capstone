@@ -1,4 +1,4 @@
-var accept_key = keyboard_check_pressed(vk_enter);
+var accept_key = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Q"));
 
 var textbox_x = camera_get_view_x( view_camera[0]);
 var textbox_y = camera_get_view_y( view_camera[0]) + 416;
@@ -195,10 +195,11 @@ if(draw_char == text_length[page] && page == (page_number - 1))
 	
 	
 	//draw the options
-	var _op_space = 30;
-	var _op_bord = 30;
+	var _op_space = 50;
+	var _op_bord = 40;
 	
-	var _space = 20;
+	var _space = 30;
+	var _down = 15;
 	
 	for (var op = 0; op < option_number; op++)
 	{
@@ -212,12 +213,39 @@ if(draw_char == text_length[page] && page == (page_number - 1))
 		}
 		
 		//option text
-		draw_text(_txtb_x + _space +_op_bord, _txtb_y * option_number +_op_space * op + 4, option[op]) 
+		draw_text(_txtb_x + _space +_op_bord, _txtb_y - _op_space*option_number + _op_space * op + _down, option[op]);
+		// 
+		//* option_number 
 	}
 }
 
 //Draw the text
 for (var c = 0; c < draw_char;c++)
 {
-	draw_text(char_x[c,page] , char_y[c,page] ,char[c,page]);
+	//---------- special text ----------//
+	//floaty text
+	var _float_y = 0;
+	if (float_text[c,page] == true)
+	{
+		float_dir[c,page] += -6;
+		_float_y = dsin(float_dir[c,page]);
+	}
+	//shake text
+	var _shake_x = 0;
+	var _shake_y = 0;
+	if(shake_text[c,page] == true)
+	{
+		shake_timer[c,page]--;
+		if(shake_timer[c,page] <= 2)
+		{
+			shake_timer[c,page] = irandom_range(4,8);
+			shake_dir[c,page] = irandom(360);
+			_shake_x = lengthdir_x(1, shake_dir[c,page]);
+			_shake_y = lengthdir_y(1, shake_dir[c,page]);
+		}
+		
+	}
+	
+	//the text
+	draw_text_color(char_x[c,page] + _shake_x, char_y[c,page] + _float_y + _shake_y,char[c,page], col_1[c,page], col_2[c,page], col_3[c,page], col_4[c,page], 1);
 }

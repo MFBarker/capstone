@@ -17,7 +17,7 @@ movespd = 5;
 
 //Vertical Movement (tutorial 1)
 grav = 0.3;
-jumpheight = 7;
+jumpheight = 9; //7
 vspd = 0;
 canJump = 0;
 canDoubleJump = false;
