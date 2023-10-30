@@ -9,7 +9,10 @@
     "name": "Common",
     "path": "folders/Objects/Common.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_walkable",
+    "path": "objects/obj_walkable/obj_walkable.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

@@ -50,8 +50,8 @@
   },
   "origin": 0,
   "parent": {
-    "name": "Hub",
-    "path": "folders/Sprites/Hub.yy",
+    "name": "Tutorial",
+    "path": "folders/Sprites/Hub/Tutorial.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

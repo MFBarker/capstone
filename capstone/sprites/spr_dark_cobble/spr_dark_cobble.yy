@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_dark_cobble",
-  "bbox_bottom": 65,
-  "bbox_left": 2,
-  "bbox_right": 65,
-  "bbox_top": 2,
+  "bbox_bottom": 63,
+  "bbox_left": 0,
+  "bbox_right": 63,
+  "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -17,7 +17,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 68,
+  "height": 64,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8f63a5aa-851e-4e72-ae62-e81517ea21f2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -25,7 +25,7 @@
   "nineSlice": {
     "resourceType": "GMNineSliceData",
     "resourceVersion": "1.0",
-    "bottom": 2,
+    "bottom": 0,
     "enabled": true,
     "guideColour": [
       4294902015,
@@ -35,8 +35,8 @@
     ],
     "highlightColour": 1728023040,
     "highlightStyle": 0,
-    "left": 2,
-    "right": 2,
+    "left": 0,
+    "right": 0,
     "tileMode": [
       0,
       0,
@@ -44,7 +44,7 @@
       0,
       1,
     ],
-    "top": 2,
+    "top": 0,
   },
   "origin": 0,
   "parent": {
@@ -93,5 +93,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 68,
+  "width": 64,
 }

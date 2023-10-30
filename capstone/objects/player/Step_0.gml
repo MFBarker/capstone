@@ -1,4 +1,5 @@
 /// @description Movement
+CheckAnimation(); 
 
 //(Tutorial 1)
 //inputs
@@ -13,12 +14,14 @@ var isGrounded = place_meeting(x, y + 1,obj_wall);
 var isDead = (health == 0);
 
 //custom ones
-var keyPunch = keyboard_check(ord("T"));
+var keyPunch = keyboard_check_pressed(ord("T"));
+var keySword = keyboard_check(ord("W"));
 var keyCrouch = keyboard_check(ord("S")) || keyboard_check(vk_down);
 var keyHide = keyboard_check(ord("V"));
 
 
 var keyInventory = keyboard_check(vk_tab);
+
 
 //---------------------------
 //------------Horizontal Movement
@@ -26,10 +29,22 @@ var keyInventory = keyboard_check(vk_tab);
 //direction
 var move = (keyRight - keyLeft) * movespd;
 
-//collision check
-if(place_meeting(x + move, y,obj_wall))
+var sprint = 2;
+
+if (keyboard_check(vk_shift) && move)
 {
-	while (!place_meeting(x + sign(move),y, obj_wall))
+	move *= sprint;
+	image_speed = 2;
+}
+else if(keyboard_check_released(vk_shift))
+{
+	image_speed = 1;
+}
+
+//collision check
+if(place_meeting(x + move, y,obj_walkable))
+{
+	while (!place_meeting(x + sign(move),y, obj_walkable))
 	{
 		x += sign(move);
 	}
@@ -44,20 +59,19 @@ x += move;
 vspd += grav; //apply gravity
 
 //collision check
-if(place_meeting(x, y+vspd,obj_wall))
+if(place_meeting(x, y+vspd,obj_walkable))
 {
-	while (!place_meeting(x, y + sign(vspd),obj_wall))
+	while (!place_meeting(x, y + sign(vspd),obj_walkable))
 	{
 		y+= sign(vspd);
 	}
 	vspd = 0;
 }
+
 if(isGrounded) // on ground
 {
 	canJump = 10;
 	canDoubleJump = false;
-	
-	if(sprite_index != player_idle && !keyJump) sprite_index = player_idle;
 }
 else canJump -= 1;
 
@@ -82,25 +96,53 @@ if (canJump and keyJump) //normal jump
 y += vspd;
 
 //------------------------
+
+
+//
 //Animation
 if(keyLeft)
 {
 	sprite_index = player_run_l;
+	_facing = -1;
 	
 }
 else if(keyRight)
 {
 	sprite_index = player_run_r;
+	_facing = 1;
 }
-else if (vk_nokey)
+else if (keyboard_check(vk_nokey))
 {
-	sprite_index = player_idle;
+	if (image_speed != 1) image_speed = 1;
+	
+	//if(keyboard_lastkey == keyRight) sprite_index = player_idle;
+	//else if (keyboard_lastkey == keyLeft) sprite_index = player_idle_left;
+	//else sprite_index = player_idle;
+	
+	
+	if (_facing == -1)
+	{
+		sprite_index = player_idle_left;
+	}
+	else //(_facing == 1)
+	{
+		sprite_index = player_idle;
+	}
 }
+
 
 //jump code animation
 if(keyJump)
 {
-	sprite_index = player_jump;
+	//sprite_index = player_jump;	
+	if (_facing == -1)
+	{
+		sprite_index = player_jump_l;
+	}
+	else //(_facing == 1)
+	{
+		sprite_index = player_jump;
+	}
 }
 
 if(isDead)
@@ -118,11 +160,20 @@ if(isDead)
 
 //}
 
+
+
 //Attacks
-if(keyPunch)
-{
+// Attack 1 & 2
+if (keyPunch) {
+	//if (keyboard_check(vk_shift)) {
+	//	StartAnimation(seqAttack1_Heavy);
+	//}
+	//else {
+	//	StartAnimation(seq_punch);
+	//}
 	sprite_index = player_punch;
 }
+
 
 //Crouch
 if(keyCrouch)
@@ -148,3 +199,5 @@ if(keyHide)
 		move = 0;
 	}
 }
+
+//move_and_collide(x,y, obj_platform);

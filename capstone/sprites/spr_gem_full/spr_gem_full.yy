@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Gem Shards",
-    "path": "folders/Sprites/Items/Gem Shards.yy",
+    "path": "folders/Sprites/Platforms/Items/Gem Shards.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
