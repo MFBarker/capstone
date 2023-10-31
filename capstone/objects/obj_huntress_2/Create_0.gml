@@ -12,11 +12,9 @@ moveY = 0;
 knockSpeed = 0;
 
 //sprites
-spr_idle = spr_ghost_idle;
-spr_run = "";
-spr_attack = "";
-spr_hit = "";
-spr_death = spr_ghost_idle;
-
-
+spr_idle = spr_huntress_2_idle;
+spr_run = spr_huntress_2_run;
+spr_attack = spr_huntress_2_attack;
+spr_hit = spr_huntress_2_hit;
+spr_death = spr_huntress_2_death;
 

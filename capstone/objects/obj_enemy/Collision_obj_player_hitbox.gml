@@ -11,7 +11,7 @@ moveX = lengthdir_x(knockSpeed, _dir);
 moveY = lengthdir_y(knockSpeed, _dir);
 
 if (hp <= 0) {
-	sprite_index = EnemyDie; // inherit event and set variable
+	sprite_index = spr_death; // inherit event and set variable
 }
 else {
 	image_alpha = 0.6;

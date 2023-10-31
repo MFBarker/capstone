@@ -11,4 +11,9 @@ moveY = 0;
 
 knockSpeed = 0;
 
-
+//sprites
+spr_idle = "";
+spr_run = "";
+spr_attack = "";
+spr_hit = "";
+spr_death = "";

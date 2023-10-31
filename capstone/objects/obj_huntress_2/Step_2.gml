@@ -1,4 +1,5 @@
-//movement & animation
+
+//animations & movement
 speed_x = x - xprevious;
 speed_y = y - yprevious;
 

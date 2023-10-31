@@ -1,5 +1,5 @@
 /// @description Movement
-CheckAnimation(); 
+CheckAnimation();
 
 //(Tutorial 1)
 //inputs
