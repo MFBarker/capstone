@@ -42,10 +42,11 @@ switch(state)
 }
 
 //path stuff ()
-if (path_to_follow == "huntresspath1" && x == 1312 && y == 512)
+//if (path_to_follow == "huntresspath1" && x == 1312 && y == 512)
+if (path_to_follow == huntresspath1)
 {
 	// make the enemy pause for a few seconds then reverse
-	alarm[1] = 5 * room_speed;
+	alarm[1] = 5 * delta_time;
 	//if (state != ANIM._IDLE)
 	//{
 	//	state = ANIM._IDLE;
