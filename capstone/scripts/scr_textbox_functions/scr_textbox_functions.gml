@@ -25,7 +25,7 @@ function scr_set_defaults_for_text()
 	txtb_spr[page_number] = spr_menu;
 	speaker_sprite[page_number] = noone;
 	speaker_side[page_number] = 1;
-	snd[page_number] = snd_char_low;
+	snd[page_number] = snd_char_item;
 }
 
 //TEXT VFX
@@ -92,15 +92,14 @@ function scr_text(_text){
 			case "tutorial npc":
 				speaker_sprite[page_number] = spr_npc_tb;
 				txtb_spr[page_number] = spr_menu;
-				
+				snd[page_number] = snd_char_low;
 				break;
 			//llama
 			case "llama":
 				speaker_sprite[page_number] = spr_llama_tb;
 				txtb_spr[page_number] = spr_menu;
-				
+				snd[page_number] = snd_char_llama;
 				break;
-			
 		}
 	}
 	

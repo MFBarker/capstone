@@ -42,25 +42,16 @@ switch(state)
 }
 
 //path stuff ()
-if (path_endaction == path_action_stop)
+if (path_to_follow == "huntresspath1" && x == 1312 && y == 512)
 {
 	// make the enemy pause for a few seconds then reverse
-	var _timer = 40;
-	while ( _timer != 0)
-	{
-		if (state != ANIM._IDLE)
-		{
-			state = ANIM._IDLE;
-			speed = 0;
-			_timer--;
-		}
-		else _timer--;
-	}
+	alarm[1] = 5 * room_speed;
+	//if (state != ANIM._IDLE)
+	//{
+	//	state = ANIM._IDLE;
+	//	speed = 0;
+	//}
 	
-	if (_timer == 0)
-	{
-		path_endaction = path_action_reverse;
-		state = ANIM._RUN;
-	}
+	
 }
 

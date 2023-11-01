@@ -19,4 +19,4 @@ spr_hit = spr_huntress_1_hit;
 spr_death = spr_huntress_1_death;
 
 //state machine
-state = ANIM._IDLE;
+state = ANIM._RUN;
