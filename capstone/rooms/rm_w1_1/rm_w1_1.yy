@@ -12,7 +12,6 @@
     {"name":"inst_71AD6AEA","path":"rooms/rm_w1_1/rm_w1_1.yy",},
     {"name":"inst_1C4284B8","path":"rooms/rm_w1_1/rm_w1_1.yy",},
     {"name":"inst_4115DA5","path":"rooms/rm_w1_1/rm_w1_1.yy",},
-    {"name":"inst_6472CB65","path":"rooms/rm_w1_1/rm_w1_1.yy",},
     {"name":"inst_5D479618","path":"rooms/rm_w1_1/rm_w1_1.yy",},
     {"name":"inst_6F798686","path":"rooms/rm_w1_1/rm_w1_1.yy",},
     {"name":"inst_2C18049D","path":"rooms/rm_w1_1/rm_w1_1.yy",},
@@ -20,11 +19,12 @@
     {"name":"inst_68F50326","path":"rooms/rm_w1_1/rm_w1_1.yy",},
     {"name":"inst_2BCBEC97","path":"rooms/rm_w1_1/rm_w1_1.yy",},
     {"name":"inst_149665FB","path":"rooms/rm_w1_1/rm_w1_1.yy",},
+    {"name":"inst_6472CB65","path":"rooms/rm_w1_1/rm_w1_1.yy",},
   ],
   "isDnd": false,
   "layers": [
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Player","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6472CB65","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"player","path":"objects/player/player.yy",},"properties":[],"rotation":0.0,"scaleX":5.0,"scaleY":5.0,"x":96.0,"y":640.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6472CB65","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"player","path":"objects/player/player.yy",},"properties":[],"rotation":0.0,"scaleX":3.5,"scaleY":3.1666665,"x":160.0,"y":384.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRLayer","resourceVersion":"1.0","name":"Folder_1","depth":900,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
         {"resourceType":"GMRLayer","resourceVersion":"1.0","name":"Folder_2","depth":1000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[

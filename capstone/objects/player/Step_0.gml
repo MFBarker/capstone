@@ -14,7 +14,6 @@ var isGrounded = place_meeting(x, y + 1,obj_wall);
 var isDead = (health == 0);
 
 //custom ones
-var keyPunch = keyboard_check_pressed(ord("T"));
 var keySword = keyboard_check(ord("W"));
 var keyCrouch = keyboard_check(ord("S")) || keyboard_check(vk_down);
 var keyHide = keyboard_check(ord("V"));
@@ -164,14 +163,14 @@ if(isDead)
 
 //Attacks
 // Attack 1 & 2
-if (keyPunch) {
+if (keySword) {
 	//if (keyboard_check(vk_shift)) {
 	//	StartAnimation(seqAttack1_Heavy);
 	//}
 	//else {
 	//	StartAnimation(seq_punch);
 	//}
-	sprite_index = player_punch;
+	sprite_index = player_sword;
 }
 
 

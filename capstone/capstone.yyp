@@ -69,6 +69,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Items","folderPath":"folders/Sprites/Platforms/Items.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Gem Shards","folderPath":"folders/Sprites/Platforms/Items/Gem Shards.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Potions","folderPath":"folders/Sprites/Platforms/Items/Potions.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player","folderPath":"folders/Sprites/Player.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Structures","folderPath":"folders/Sprites/Structures.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"w1-1","folderPath":"folders/Sprites/Structures/w1-1.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"temp_player","folderPath":"folders/Sprites/temp_player.yy",},
@@ -81,7 +82,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Map","folderPath":"folders/Sprites/UI/Map.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player","folderPath":"folders/Sprites/Player.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"zig_____.ttf","CopyToMask":-1,"filePath":"datafiles",},
@@ -128,6 +128,7 @@
     {"id":{"name":"spr_null","path":"sprites/spr_null/spr_null.yy",},},
     {"id":{"name":"rm_w1_4","path":"rooms/rm_w1_4/rm_w1_4.yy",},},
     {"id":{"name":"scr_textbox_functions","path":"scripts/scr_textbox_functions/scr_textbox_functions.yy",},},
+    {"id":{"name":"spr_player_hide","path":"sprites/spr_player_hide/spr_player_hide.yy",},},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
     {"id":{"name":"spr_hunters_hut_back","path":"sprites/spr_hunters_hut_back/spr_hunters_hut_back.yy",},},
     {"id":{"name":"spr_shrine_empty","path":"sprites/spr_shrine_empty/spr_shrine_empty.yy",},},

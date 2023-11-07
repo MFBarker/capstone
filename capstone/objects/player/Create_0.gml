@@ -1,19 +1,18 @@
 /// @description Initial Variables
 
 //anim shortcuts
-player_idle = spr_temp_player_idle;
-player_idle_left = spr_temp_player_idle_l;
-player_run_l = spr_temp_player_run_left;
-player_run_r = spr_temp_player_run_right;
-player_jump = spr_temp_player_jump;
-player_jump_l = spr_temp_player_jump_l;
-player_death = spr_temp_player_death;
-player_punch = spr_temp_player_punch;
-player_sword = spr_temp_player_sword;
-player_crouch_idle = spr_temp_player_crouch_idle;
-player_crouch_walk_left = spr_temp_player_crouch_walk_left;
-player_crouch_walk_right = spr_temp_player_crouch_walk_right;
-player_hide = spr_temp_player_hide;
+player_idle = spr_player_idle;
+player_idle_left = spr_player_idle_left;
+player_run_l = spr_player_run_left;
+player_run_r = spr_player_run;
+player_jump = spr_player_jump;
+player_jump_l = spr_player_jump; //not working *
+player_death = spr_player_death;
+player_sword = spr_player_attack;
+player_crouch_idle = spr_player_idle; //no sprite *
+player_crouch_walk_left = spr_player_run_left; //none *
+player_crouch_walk_right = spr_player_run; //none *
+player_hide = spr_player_hide;
 
 //Horizontal Movement
 movespd = 5;
