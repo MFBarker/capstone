@@ -11,11 +11,6 @@ if(room_get_name(room) == "rm_w1_1"){
 }
 else if(room_get_name(room) == "rm_w1_2"){
 	instance_destroy(player);
-	room_goto(rm_w1_3);
-	
-}
-else if(room_get_name(room) == "rm_w1_3"){
-	instance_destroy(player);
 	room_goto(rm_w1_4);
 	
 }

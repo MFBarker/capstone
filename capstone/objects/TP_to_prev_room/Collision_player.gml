@@ -9,14 +9,9 @@ if(room_get_name(room) == "rm_w1_2"){
 	instance_destroy(player);
 	room_goto(rm_w1_1);
 }
-else if(room_get_name(room) == "rm_w1_3"){
-	instance_destroy(player);
-	room_goto(rm_w1_2);
-	
-}
 else if(room_get_name(room) == "rm_w1_4"){
 	instance_destroy(player);
-	room_goto(rm_w1_3);
+	room_goto(rm_w1_2);
 }
 
 //cave
