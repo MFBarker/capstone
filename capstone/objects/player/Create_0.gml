@@ -6,13 +6,14 @@ player_idle_left = spr_player_idle_left;
 player_run_l = spr_player_run_left;
 player_run_r = spr_player_run;
 player_jump = spr_player_jump;
-player_jump_l = spr_player_jump; //not working *
+player_jump_l = spr_player_jump_left; //works weirdly,but sprite does work
 player_death = spr_player_death;
 player_sword = spr_player_attack;
 player_crouch_idle = spr_player_crouch_idle;
-player_crouch_walk_left = spr_player_run_left; //none *
-player_crouch_walk_right = spr_player_run; //none *
+player_crouch_walk_left = spr_player_crouch_walk_left;
+player_crouch_walk_right = spr_player_crouch_walk_right;
 player_hide = spr_player_hide;
+player_hit = spr_player_hit;
 
 //Horizontal Movement
 movespd = 5;
@@ -24,7 +25,7 @@ vspd = 0;
 canJump = 0;
 canDoubleJump = false;
 
-//traching what room player is in (credit to chamaeleon, "tutorial" 2)
+//tracking what room player is in (credit to chamaeleon, "tutorial" 2)
 the_last_room = noone;
 the_current_room = room;
 

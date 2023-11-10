@@ -4,7 +4,7 @@
   "name": "Field_long",
   "bbox_bottom": 767,
   "bbox_left": 0,
-  "bbox_right": 1727,
+  "bbox_right": 6826,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7dd072f9-06a5-4ad7-bf68-fb58ff400bf6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"83248fdb-af94-4e4f-a5dc-1c8155f70594",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 768,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"2e63ee55-6461-46d6-8e20-20ee3cab99f6","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"83a996dc-3042-493b-908f-1e5170d5e704","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7dd072f9-06a5-4ad7-bf68-fb58ff400bf6","path":"sprites/Field_long/Field_long.yy",},},},"Disabled":false,"id":"0271953d-82ed-4a30-a489-edbcdfee9b6b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"83248fdb-af94-4e4f-a5dc-1c8155f70594","path":"sprites/Field_long/Field_long.yy",},},},"Disabled":false,"id":"b94f6088-d548-40d7-b903-30465cf0e872","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1728,
+  "width": 6827,
 }

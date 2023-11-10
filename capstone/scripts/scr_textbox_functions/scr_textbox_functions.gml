@@ -84,7 +84,7 @@ function scr_text(_text){
 		{
 			//player
 			case "player":
-				speaker_sprite[page_number] = spr_temp_player_tb;
+				speaker_sprite[page_number] = spr_player_tb;
 				txtb_spr[page_number] = spr_menu;
 				snd[page_number] = snd_char_high;
 				break;

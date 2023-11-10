@@ -14,7 +14,7 @@ var isGrounded = place_meeting(x, y + 1,obj_wall);
 var isDead = (health == 0);
 
 //custom ones
-var keySword = keyboard_check(ord("W"));
+var keySword = keyboard_check(ord("T"));
 var keyCrouch = keyboard_check(ord("S")) || keyboard_check(vk_down);
 var keyHide = keyboard_check(ord("V"));
 
@@ -150,16 +150,18 @@ if(isDead)
 }
 
 
-
-
-//player tp when change room
-//if(room_get_name(room) == rm_hub && the_last_room == rm_tutorial)
-//{
-//	audio_play_sound(snd_test,50,true);
-
-//}
-
-
+/* Temp Animations for stuff */
+//hit
+if(keyboard_check_pressed(ord("9")))
+{
+	sprite_index = player_hit;
+}
+//death
+if(keyboard_check_pressed(ord("0")))
+{
+	sprite_index = player_death;
+}
+/* Temp Area End */
 
 //Attacks
 // Attack 1 & 2
