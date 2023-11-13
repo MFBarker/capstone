@@ -96,7 +96,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 31,
+    "xorigin": 28,
     "yorigin": 52,
   },
   "swatchColours": null,
@@ -107,5 +107,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 63,
+  "width": 57,
 }

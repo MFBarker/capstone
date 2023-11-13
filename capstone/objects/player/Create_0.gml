@@ -16,7 +16,7 @@ player_hide = spr_player_hide;
 player_hit = spr_player_hit;
 
 //Horizontal Movement
-movespd = 5;
+movespd = 6;
 
 //Vertical Movement (tutorial 1)
 grav = 0.3;
