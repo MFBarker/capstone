@@ -26,3 +26,5 @@ var _max_health = 100;
 health = 100;
 lives = 3;
 score = 0;
+
+var current_health = string_concat(health,"/", _max_health);
