@@ -11,6 +11,23 @@ if(keyboard_check(vk_escape))
 	game_end(0); //end game with no errors
 }
 
+//
+if(keyboard_check_pressed(ord("M")))
+{
+	score += 100;
+}
+if(keyboard_check_pressed(ord("N")))
+{
+	if(health != 0)
+	{
+		health -= 10;
+	}
+}
+if(keyboard_check_pressed(ord("B")))
+{
+	health = _max_health;
+}
+//
 //-------------music------------------
 //hub,tutorial,cave
 if(room_get_name(room) == "rm_hub"){
@@ -71,5 +88,20 @@ else if(room_get_name(room) == "rm_w1_5"){
 	{
 		audio_stop_all();
 		audio_play_sound(snd_w1_5,50,true);
+	}
+}
+
+//game over & lose life
+if (health <= 0)
+{
+	if(lives <= 0)
+	{
+		//game over
+		
+	}
+	else
+	{
+		lives--;
+		health = _max_health;
 	}
 }

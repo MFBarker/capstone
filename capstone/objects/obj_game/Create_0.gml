@@ -22,9 +22,8 @@ view_visible[0] = true;
 global.font_text = fnt_textbox;
 
 //Player Stats
-var _max_health = 100;
+_max_health = 100;
 health = 100;
 lives = 3;
-score = 0;
+score = 00000;
 
-var current_health = string_concat(health,"/", _max_health);
