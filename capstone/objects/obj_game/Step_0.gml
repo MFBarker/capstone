@@ -97,6 +97,7 @@ if (health <= 0)
 	if(lives <= 0)
 	{
 		//game over
+		room_goto(rm_game_over);
 		
 	}
 	else

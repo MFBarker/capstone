@@ -2,14 +2,19 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_potion_healing",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":69,"eventType":9,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "Potions",
     "path": "folders/Objects/Items/Potions.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_pick_ups",
+    "path": "objects/obj_pick_ups/obj_pick_ups.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
