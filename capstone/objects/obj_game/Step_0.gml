@@ -11,7 +11,7 @@ if(keyboard_check(vk_escape))
 	game_end(0); //end game with no errors
 }
 
-//
+//test stuff
 if(keyboard_check_pressed(ord("M")))
 {
 	score += 100;
@@ -25,9 +25,12 @@ if(keyboard_check_pressed(ord("N")))
 }
 if(keyboard_check_pressed(ord("B")))
 {
-	health = _max_health;
+	if(health != 0)
+	{
+		health -= 10;
+	}
 }
-//
+
 //-------------music------------------
 //hub,tutorial,cave
 if(room_get_name(room) == "rm_hub"){
@@ -50,6 +53,14 @@ else if(room_get_name(room) == "rm_cave"){
 	{
 		audio_stop_all();
 		audio_play_sound(snd_cave,50,true);
+	}
+}
+else if(room_get_name(room) == "rm_game_over")
+{
+	if(!audio_is_playing(snd_gameOver))
+	{
+		audio_stop_all();
+		audio_play_sound(snd_gameOver,50,true);
 	}
 }
 //World 1
@@ -97,12 +108,17 @@ if (health <= 0)
 	if(lives <= 0)
 	{
 		//game over
-		room_goto(rm_game_over);
+		global.can_move = false;
+		if(alarm[0] == -1)
+		{
+			alarm[0] = 10;
+		}
 		
+		show_debug_message(alarm_get(0));
 	}
 	else
 	{
 		lives--;
-		health = _max_health;
+		health = global._max_health;
 	}
 }

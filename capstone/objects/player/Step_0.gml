@@ -22,13 +22,14 @@ var keyHide = keyboard_check(ord("V"));
 var keyInventory = keyboard_check(vk_tab);
 
 
-//---------------------------
 //------------Horizontal Movement
 
 //direction
 var move = (keyRight - keyLeft) * movespd;
 
 var sprint = 2;
+
+if(global.can_move != true) move = 0;
 
 if (keyboard_check(vk_shift) && move)
 {
@@ -52,7 +53,6 @@ if(place_meeting(x + move, y,obj_walkable))
 //commit to move
 x += move;
 
-//-----------------------
 
 //----------Vertical Movement
 vspd += grav; //apply gravity
@@ -95,9 +95,7 @@ if (canJump and keyJump) //normal jump
 y += vspd;
 
 //------------------------
-
-
-//
+	
 //Animation
 if(keyLeft)
 {
@@ -113,12 +111,6 @@ else if(keyRight)
 else if (keyboard_check(vk_nokey))
 {
 	if (image_speed != 1) image_speed = 1;
-	
-	//if(keyboard_lastkey == keyRight) sprite_index = player_idle;
-	//else if (keyboard_lastkey == keyLeft) sprite_index = player_idle_left;
-	//else sprite_index = player_idle;
-	
-	
 	if (_facing == -1)
 	{
 		sprite_index = player_idle_left;
@@ -128,54 +120,7 @@ else if (keyboard_check(vk_nokey))
 		sprite_index = player_idle;
 	}
 }
-
-
-//jump code animation
-if(keyJump)
-{
-	//sprite_index = player_jump;	
-	if (_facing == -1)
-	{
-		sprite_index = player_jump_l;
-	}
-	else //(_facing == 1)
-	{
-		sprite_index = player_jump;
-	}
-}
-
-if(isDead)
-{
-	sprite_index = player_death;
-}
-
-
-/* Temp Animations for stuff */
-//hit
-if(keyboard_check_pressed(ord("9")))
-{
-	sprite_index = player_hit;
-}
-//death
-if(keyboard_check_pressed(ord("0")))
-{
-	sprite_index = player_death;
-}
-/* Temp Area End */
-
-//Attacks
-// Attack 1 & 2
-if (keySword) {
-	//if (keyboard_check(vk_shift)) {
-	//	StartAnimation(seqAttack1_Heavy);
-	//}
-	//else {
-	//	StartAnimation(seq_punch);
-	//}
-	sprite_index = player_sword;
-}
-
-
+	
 //Crouch
 if(keyCrouch)
 {
@@ -200,5 +145,40 @@ if(keyHide)
 		move = 0;
 	}
 }
+//jump code animation
+if(keyJump)
+{
+	//sprite_index = player_jump;	
+	if (_facing == -1)
+	{
+		sprite_index = player_jump_l;
+	}
+	else //(_facing == 1)
+	{
+		sprite_index = player_jump;
+	}
+}
+//attack
+if (keySword) 
+{
+	sprite_index = player_sword;
+}
 
-//move_and_collide(x,y, obj_platform);
+//dead
+if(isDead)
+{
+	sprite_index = player_death;
+}
+
+/* Temp Animations for stuff */
+//hit
+if(keyboard_check_pressed(ord("9")))
+{
+	sprite_index = player_hit;
+}
+//death
+if(keyboard_check_pressed(ord("0")))
+{
+	sprite_index = player_death;
+}
+/* Temp Area End */
