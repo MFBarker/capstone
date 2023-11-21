@@ -129,9 +129,10 @@ function scr_options(_option,_link_id)
 function create_textbox(text_id)
 {
 	with(instance_create_depth(0,0,-9000,obj_textbox))
-		{
-			scr_game_text(text_id);
-		}
+	{
+		scr_game_text(text_id);
+	}
+	global.tb = true;
 }
 
 

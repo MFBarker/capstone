@@ -31,6 +31,33 @@ if(keyboard_check_pressed(ord("B")))
 	}
 }
 
+//____________________PAUSE MENU___________________
+
+//unpause
+if (keyboard_check_pressed(vk_tab) && pause == true)
+{
+	pause = false;
+	draw_clear_alpha(c_white,0);
+	global.can_move = true;
+	//debug
+	show_debug_message("UNPAUSE");
+	show_debug_message(string(pause));
+}
+//pause
+else if(keyboard_check_pressed(vk_tab))
+{
+	pause = true;
+	global.can_move = false;
+	//debug
+	show_debug_message("PAUSE");
+	show_debug_message(string(pause));
+	
+}
+
+
+
+
+
 //-------------music------------------
 //hub,tutorial,cave
 if(room_get_name(room) == "rm_hub"){

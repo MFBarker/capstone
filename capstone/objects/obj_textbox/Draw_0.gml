@@ -148,6 +148,7 @@ if (accept_key)
 				create_textbox(option_link_id[option_pos]);
 			}
 			instance_destroy();
+			global.tb = false;
 		}
 	
 	}

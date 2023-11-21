@@ -30,15 +30,36 @@ var move = (keyRight - keyLeft) * movespd;
 var sprint = 2;
 
 if(global.can_move != true) move = 0;
+if(global.tb == true) move = 0;
 
 if (keyboard_check(vk_shift) && move)
 {
-	move *= sprint;
+	if(_facing == 1) //right
+	{
+		move *= sprint;
+	}
+	else //left or -1
+	{
+		move *= (sprint*movespd);
+	}
+	
 	image_speed = 2;
 }
 else if(keyboard_check_released(vk_shift))
 {
 	image_speed = 1;
+}
+else if(keyboard_check(vk_shift))
+{
+	//no movement
+	if (_facing == -1)
+	{
+		sprite_index = player_idle_left;
+	}
+	else //(_facing == 1)
+	{
+		sprite_index = player_idle;
+	}
 }
 
 //collision check
@@ -51,7 +72,7 @@ if(place_meeting(x + move, y,obj_walkable))
 	move = 0;
 }
 //commit to move
-x += move;
+if(!keyHide) x += move; //hide functionality
 
 
 //----------Vertical Movement
@@ -97,88 +118,88 @@ y += vspd;
 //------------------------
 	
 //Animation
-if(keyLeft)
+if (global.tb != true)
 {
-	sprite_index = player_run_l;
-	_facing = -1;
+	if(global.can_move == true)
+	{
+		if(keyLeft)
+		{
+			sprite_index = player_run_l;
+			_facing = -1;
+		}
+		else if(keyRight)
+		{
+			sprite_index = player_run_r;
+			_facing = 1;
+		}
+		else if (keyboard_check(vk_nokey))
+		{
+			if (image_speed != 1) image_speed = 1;
+			if (_facing == -1)
+			{
+				sprite_index = player_idle_left;
+			}
+			else //(_facing == 1)
+			{
+				sprite_index = player_idle;
+			}
+		}
 	
-}
-else if(keyRight)
-{
-	sprite_index = player_run_r;
-	_facing = 1;
-}
-else if (keyboard_check(vk_nokey))
-{
-	if (image_speed != 1) image_speed = 1;
-	if (_facing == -1)
-	{
-		sprite_index = player_idle_left;
-	}
-	else //(_facing == 1)
-	{
-		sprite_index = player_idle;
-	}
-}
-	
-//Crouch
-if(keyCrouch)
-{
-	sprite_index = player_crouch_idle;
-	if (keyCrouch && keyLeft)
-	{
-		sprite_index = player_crouch_walk_left;
-	}
-	else if (keyCrouch && keyRight)
-	{
-		sprite_index = player_crouch_walk_right;
-	}
-}
+		//Crouch
+		if(keyCrouch)
+		{
+			sprite_index = player_crouch_idle;
+			if (keyCrouch && keyLeft)
+			{
+				sprite_index = player_crouch_walk_left;
+			}
+			else if (keyCrouch && keyRight)
+			{
+				sprite_index = player_crouch_walk_right;
+			}
+		}
 
-//hide (will change once the thing is able to be unlocked)
-if(keyHide)
-{
-	sprite_index = player_hide;
-	//restrict movement
-	if ((keyHide && keyLeft) || (keyHide && keyRight))
-	{
-		move = 0;
+		//hide (will change once the thing is able to be unlocked)
+		if(keyHide)
+		{
+			sprite_index = player_hide;
+			//restrict movement is done above (ln 66)
+		}
+		//jump code animation
+		if(keyJump)
+		{
+			//sprite_index = player_jump;	
+			if (_facing == -1)
+			{
+				sprite_index = player_jump_l;
+			}
+			else //(_facing == 1)
+			{
+				sprite_index = player_jump;
+			}
+		}
+		//attack
+		if (keySword) 
+		{
+			sprite_index = player_sword;
+		}
 	}
-}
-//jump code animation
-if(keyJump)
-{
-	//sprite_index = player_jump;	
-	if (_facing == -1)
+	//dead
+	if(isDead)
 	{
-		sprite_index = player_jump_l;
+		sprite_index = player_death;
 	}
-	else //(_facing == 1)
-	{
-		sprite_index = player_jump;
-	}
-}
-//attack
-if (keySword) 
-{
-	sprite_index = player_sword;
-}
 
-//dead
-if(isDead)
-{
-	sprite_index = player_death;
+	/* Temp Animations for stuff */
+	//hit
+	if(keyboard_check_pressed(ord("9")))
+	{
+		sprite_index = player_hit;
+	}
+	//death
+	if(keyboard_check_pressed(ord("0")))
+	{
+		sprite_index = player_death;
+	}
+	/* Temp Area End */
 }
-
-/* Temp Animations for stuff */
-//hit
-if(keyboard_check_pressed(ord("9")))
-{
-	sprite_index = player_hit;
-}
-//death
-if(keyboard_check_pressed(ord("0")))
-{
-	sprite_index = player_death;
-}
-/* Temp Area End */
