@@ -160,7 +160,7 @@ if (global.tb != true)
 		}
 
 		//hide (will change once the thing is able to be unlocked)
-		if(keyHide)
+		if(keyHide && global.cloak == true)
 		{
 			sprite_index = player_hide;
 			//restrict movement is done above (ln 66)

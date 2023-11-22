@@ -10,6 +10,9 @@ global.font_text = fnt_textbox;
 global.can_move = true;
 global.tb = false;
 
+global.cloak = false;
+global.tp_item = false;
+
 //Player Stats
 global._max_health = 100;
 global._max_lives = 3;
@@ -19,4 +22,3 @@ score = 00000;
 
 //pause menu
 pause = false;
-var pause_surface;

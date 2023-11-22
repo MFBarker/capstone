@@ -1,5 +1,5 @@
-//tp back to hub (DEBUG ONLY)
-if(keyboard_check(ord("K")))
+//tp back to hub
+if(keyboard_check(ord("K")) && global.tp_item == true)
 {
 	instance_destroy(player);
 	room_goto(rm_hub);
@@ -51,7 +51,6 @@ else if(keyboard_check_pressed(vk_tab))
 	//debug
 	show_debug_message("PAUSE");
 	show_debug_message(string(pause));
-	
 }
 
 

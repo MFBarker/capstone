@@ -11,7 +11,6 @@ lives_offset_y = 40;
 top_offset_y = 10;
 
 //code
-var rm = room_get_viewport(room,0);
 var cam = room_get_camera(room,0);
 
 var cam_x = camera_get_view_x(cam);
@@ -43,15 +42,62 @@ if(pause)
 	//background
 	draw_set_color(c_black);
 	draw_set_alpha(0.85);
-	draw_rectangle(cam_pos_x,cam_pos_y,1376,768,false);
+	draw_rectangle(0, 0, 1376, 768, false);
+	
+	draw_set_color(#b3b2b1);
+	draw_set_alpha(1);
+	draw_rectangle(678, 200, 1350, 748,false);
+	
+	draw_set_color(#474233);
+	draw_rectangle(700, 650, 1000, 740,false);
+	
+	draw_sprite(spr_controls,1,32,200)
+	
 	//words
 	draw_set_font(fnt_title);
 	draw_set_color(c_yellow);
 	draw_set_alpha(1);
-	draw_text(cam_pos_x + 500,cam_pos_y + 90,"PAUSE");
+	draw_text(500, 90,"PAUSE");
+	
+	draw_set_font(fnt_credits);
+	draw_set_color(c_black);
+	draw_text(930,220,"STATS");
+	draw_set_font(fnt_zig);
+	//health
+	draw_text(700, 300,string_concat("HEALTH: ",string(health),"/",string(global._max_health)));
+	//score
+	draw_text(700, 350,string_concat("SCORE: ",string(score)));
+	//lives
+	draw_text(1200, 300,string_concat("LIVES: ",string(lives)));
 	
 	
-	//buttons
+	//invn items
+	if(global.cloak)draw_sprite(spr_magic_cloak,1, 750, 700);
+	if(global.tp_item) draw_sprite(spr_tp_home_small,1,810,665);
+	
+	
+	/*
+	Return To Title
+	Base of code from KI3XY on reddit (modified to fit what I need)
+	https://www.reddit.com/r/gamemaker/comments/mq1a6s/what_is_the_best_way_to_make_a_clickable_button/
+	*/
+
+	//Draw UI
+	draw_set_color(c_gray);
+	draw_button(32, 638, 320, 736, !mouse_check_button(mb_left));
+	draw_set_color(c_white);
+	draw_text(125, 680, "Title"); //draw button text
+	if(mouse_check_button_pressed(mb_left))
+	{
+		if(point_in_rectangle(mouse_x,mouse_y,32, 638, 320, 736) == true)
+		{
+			draw_clear_alpha(c_white,0);
+			pause = false;
+			alarm[1] = 10;
+		}
+	}
+	
+	///////
 	/*
 	                     PAUSE
 	Controlls							|stats
@@ -63,9 +109,6 @@ if(pause)
 										|
 	Back To Title						|inven
 	*/
-	
-	
-	
 }
 
 

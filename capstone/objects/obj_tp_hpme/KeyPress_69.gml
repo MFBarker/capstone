@@ -8,6 +8,7 @@ if(_touching)
 	{
 		create_textbox(text_id);
 	}
+	global.tp_item = true;
 }
 
 
