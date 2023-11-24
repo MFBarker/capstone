@@ -1,5 +1,5 @@
 /// @description Insert description here
-var move = x* speed;
+var move = x * speed;
 if(place_meeting(x + move, y,obj_walkable))
 {
 	while (!place_meeting(x + sign(move),y, obj_walkable))

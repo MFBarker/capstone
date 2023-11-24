@@ -51,7 +51,7 @@ if(pause)
 	draw_set_color(#474233);
 	draw_rectangle(700, 650, 1000, 740,false);
 	
-	draw_sprite(spr_controls,1,32,200)
+	draw_sprite(spr_controls,1,32,200);
 	
 	//words
 	draw_set_font(fnt_title);
@@ -89,7 +89,7 @@ if(pause)
 	draw_text(125, 680, "Title"); //draw button text
 	if(mouse_check_button_pressed(mb_left))
 	{
-		if(point_in_rectangle(mouse_x,mouse_y,32, 638, 320, 736) == true)
+		if(point_in_rectangle(device_mouse_x_to_gui(0),device_mouse_y_to_gui(0),cam_pos_x + 32, cam_pos_y + 638, cam_pos_x + 320, cam_pos_y + 736) == true)
 		{
 			draw_clear_alpha(c_white,0);
 			pause = false;

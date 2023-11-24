@@ -133,6 +133,7 @@
     {"name":"fnt_title","order":2,"path":"fonts/fnt_title/fnt_title.yy",},
     {"name":"spr_hub_attacks_sign","order":5,"path":"sprites/spr_hub_attacks_sign/spr_hub_attacks_sign.yy",},
     {"name":"spr_knight1_run","order":1,"path":"sprites/spr_knight1_run/spr_knight1_run.yy",},
+    {"name":"spr_player_hide_left","order":15,"path":"sprites/spr_player_hide_left/spr_player_hide_left.yy",},
     {"name":"obj_game_over","order":2,"path":"objects/obj_game_over/obj_game_over.yy",},
     {"name":"obj_platform","order":5,"path":"objects/obj_platform/obj_platform.yy",},
     {"name":"rm_w1_2","order":1,"path":"rooms/rm_w1_2/rm_w1_2.yy",},

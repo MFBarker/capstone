@@ -13,6 +13,8 @@ global.tb = false;
 global.cloak = false;
 global.tp_item = false;
 
+global.player_hidden = false;
+
 //Player Stats
 global._max_health = 100;
 global._max_lives = 3;

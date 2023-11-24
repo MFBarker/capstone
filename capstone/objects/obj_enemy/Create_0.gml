@@ -17,3 +17,24 @@ spr_run = "";
 spr_attack = "";
 spr_hit = "";
 spr_death = "";
+
+//animation
+enum ANIM
+{
+	_IDLE,
+	_RUN,
+	_ATTACK,
+	_HIT,
+	_DEATH
+}
+//state machine
+state = ANIM._IDLE;
+
+atk_count = 0;
+
+//path
+//path_to_follow = obj_variable;
+path_broken = false;
+path_spd = 0;
+path_actn = path_action_stop;
+path_absol = false;

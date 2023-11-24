@@ -162,8 +162,23 @@ if (global.tb != true)
 		//hide (will change once the thing is able to be unlocked)
 		if(keyHide && global.cloak == true)
 		{
-			sprite_index = player_hide;
+			global.player_hidden = true;
 			//restrict movement is done above (ln 66)
+			if (_facing == -1)
+			{
+				sprite_index = player_hide_left;
+			}
+			else //(_facing == 1)
+			{
+				sprite_index = player_hide;
+			}
+		}
+		else if(!keyHide) 
+		{
+			if(global.player_hidden != false)
+			{
+				global.player_hidden = false;
+			}
 		}
 		//jump code animation
 		if(keyJump)

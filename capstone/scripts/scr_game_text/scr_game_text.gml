@@ -47,12 +47,12 @@ function scr_game_text(_text_id){
 		//----------------------------------ITEMS-------------------------------------
 		case "magic_cloak":
 			scr_text("It's a magical cloak.");
-			scr_text("(press 'v' to turn invisible)");
+			scr_text("(press 'V' to turn invisible)");
 			break;
 			
 		case "tp_item":
 			scr_text("You found ... a thing?");
-			scr_text("(press 'k' to teleport back to the base)");
+			scr_text("(press 'K' to teleport back to the base)");
 			break;
 	}
 	

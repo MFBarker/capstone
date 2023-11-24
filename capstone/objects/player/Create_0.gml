@@ -13,6 +13,7 @@ player_crouch_idle = spr_player_crouch_idle;
 player_crouch_walk_left = spr_player_crouch_walk_left;
 player_crouch_walk_right = spr_player_crouch_walk_right;
 player_hide = spr_player_hide;
+player_hide_left = spr_player_hide_left;
 player_hit = spr_player_hit;
 
 //Horizontal Movement

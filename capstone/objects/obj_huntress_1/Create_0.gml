@@ -19,19 +19,6 @@ spr_hit = spr_huntress_1_hit;
 spr_death = spr_huntress_1_death;
 
 
-//animation
-enum ANIM
-{
-	_IDLE,
-	_RUN,
-	_ATTACK,
-	_HIT,
-	_DEATH
-}
-//state machine
-state = ANIM._RUN;
-
-
 //control which stage of the animation we are on
 stage = 0;
 

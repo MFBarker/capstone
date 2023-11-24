@@ -168,6 +168,7 @@
     {"id":{"name":"fnt_title","path":"fonts/fnt_title/fnt_title.yy",},},
     {"id":{"name":"spr_hub_attacks_sign","path":"sprites/spr_hub_attacks_sign/spr_hub_attacks_sign.yy",},},
     {"id":{"name":"spr_knight1_run","path":"sprites/spr_knight1_run/spr_knight1_run.yy",},},
+    {"id":{"name":"spr_player_hide_left","path":"sprites/spr_player_hide_left/spr_player_hide_left.yy",},},
     {"id":{"name":"obj_game_over","path":"objects/obj_game_over/obj_game_over.yy",},},
     {"id":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
