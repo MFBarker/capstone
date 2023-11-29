@@ -10,6 +10,8 @@ function scr_game_text(_text_id){
 			scr_text("ok","player");
 			scr_text("...","tutorial npc",-1);
 			scr_text("...","player");
+			scr_text("The training area is straight ahead. Go if you want.","tutorial npc",-1);
+			scr_text("k","player");
 			scr_text("..................","tutorial npc",-1);
 			scr_text("go","tutorial npc",-1);
 				scr_options("Of Course.","TutorialNPC-yes");

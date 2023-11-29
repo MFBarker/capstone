@@ -159,9 +159,11 @@ if (global.tb != true)
 			}
 		}
 
+		var canPlay = true;
 		//hide (will change once the thing is able to be unlocked)
 		if(keyHide && global.cloak == true)
 		{
+			
 			global.player_hidden = true;
 			//restrict movement is done above (ln 66)
 			if (_facing == -1)
@@ -172,6 +174,8 @@ if (global.tb != true)
 			{
 				sprite_index = player_hide;
 			}
+			
+			
 		}
 		else if(!keyHide) 
 		{
@@ -179,7 +183,22 @@ if (global.tb != true)
 			{
 				global.player_hidden = false;
 			}
+			
 		}
+		
+		if(keyboard_check_pressed(ord("V")))
+		{
+			if(canPlay)
+			{
+				audio_play_sound(snd_cloak,50,false);
+				canPlay = false;
+			}
+		}
+		else if(keyboard_check_released(ord("V")))
+		{
+			canPlay = true;
+		}
+		
 		//jump code animation
 		if(keyJump)
 		{
@@ -197,24 +216,13 @@ if (global.tb != true)
 		if (keySword) 
 		{
 			sprite_index = player_sword;
+			audio_play_sound(snd_player_slash,50,false);
 		}
 	}
 	//dead
 	if(isDead)
 	{
 		sprite_index = player_death;
+		audio_play_sound(snd_player_death,50,false);
 	}
-
-	/* Temp Animations for stuff */
-	//hit
-	if(keyboard_check_pressed(ord("9")))
-	{
-		sprite_index = player_hit;
-	}
-	//death
-	if(keyboard_check_pressed(ord("0")))
-	{
-		sprite_index = player_death;
-	}
-	/* Temp Area End */
 }

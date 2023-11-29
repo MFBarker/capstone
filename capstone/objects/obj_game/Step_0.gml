@@ -1,6 +1,7 @@
 //tp back to hub
 if(keyboard_check(ord("K")) && global.tp_item == true)
 {
+	audio_play_sound(snd_teleport,50,false);
 	instance_destroy(player);
 	room_goto(rm_hub);
 }
@@ -9,26 +10,6 @@ if(keyboard_check(ord("K")) && global.tp_item == true)
 if(keyboard_check(vk_escape))
 {
 	game_end(0); //end game with no errors
-}
-
-//test stuff
-if(keyboard_check_pressed(ord("M")))
-{
-	score += 100;
-}
-if(keyboard_check_pressed(ord("N")))
-{
-	if(health != 0)
-	{
-		health -= 10;
-	}
-}
-if(keyboard_check_pressed(ord("B")))
-{
-	if(health != 0)
-	{
-		health -= 10;
-	}
 }
 
 //____________________PAUSE MENU___________________

@@ -68,8 +68,9 @@ if(pause)
 	//score
 	draw_text(700, 350,string_concat("SCORE: ",string(score)));
 	//lives
-	draw_text(1200, 300,string_concat("LIVES: ",string(lives)));
-	
+	draw_text(1100, 300,string_concat("LIVES: ",string(lives)));
+	//inven
+	draw_text(700,620,"Inventory");
 	
 	//invn items
 	if(global.cloak)draw_sprite(spr_magic_cloak,1, 750, 700);

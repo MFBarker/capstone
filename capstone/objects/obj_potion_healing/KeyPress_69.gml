@@ -15,6 +15,7 @@ if(_touching)
 		instance_destroy();
 	}
 	show_debug_message("health potion" + string_concat(health));
+	audio_play_sound(snd_potion_collect,50,false);
 }
 
 
