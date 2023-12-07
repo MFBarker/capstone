@@ -18,3 +18,19 @@ spr_attack = spr_huntress_2_attack;
 spr_hit = spr_huntress_2_hit;
 spr_death = spr_huntress_2_death;
 
+//control which stage of the animation we are on
+state = ANIM._IDLE;
+
+atk_count = 0;
+
+//time to wait for
+pause_timer_initial = room_speed * 2;
+pause_timer = 0;
+
+
+//path
+//path_to_follow = huntress_path;
+path_broken = false;
+path_spd = 3;
+path_actn = path_action_continue;
+path_absol = true;

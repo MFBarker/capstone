@@ -3,6 +3,9 @@ var credits = room_get_name(room) != "rm_credits";
 var world_select = room_get_name(room) != "rm_world_select";
 var gm_over = room_get_name(room) != "rm_game_over"; 
 
+var the_dark = room_get_name(room) != "rm_TheDark";
+var the_end = room_get_name(room) != "rm_TheEnd";
+
 //offsets
 hp_offset_x = 10;
 score_offset_x = 1100;
@@ -20,7 +23,7 @@ var cam_y = camera_get_view_y(cam);
 var cam_pos_x = x - cam_x;
 var cam_pos_y = y - cam_y;
 
-if(title && credits && world_select && gm_over)
+if(title && credits && world_select && gm_over && the_dark && the_end)
 {
 	if(!pause)
 	{

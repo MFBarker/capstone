@@ -1,8 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
+if(alarm[0] == -1)
+{
+	alarm[0] = 100;
+	global.can_move = false;
+}
 
 
-path_endaction = path_action_reverse;
-state = ANIM._RUN;
+
+
+
 
 

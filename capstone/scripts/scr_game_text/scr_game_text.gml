@@ -56,6 +56,22 @@ function scr_game_text(_text_id){
 			scr_text("You found ... a thing?");
 			scr_text("(press 'K' to teleport back to the base)");
 			break;
+		//--------------------------------THE END---------------------------------------
+		case "boss_fight":
+			scr_text("...","player");
+			scr_text("...", "king",-1);
+			scr_text("This is unneccesary. We do not need to fight.", "king",-1);
+			scr_text("I have no choice.","player");
+			scr_text("You can take what you want ... just have some mercy.", "king",-1);
+			scr_text("no","player");
+			break;
+		case "the_end":
+			scr_text("Just look at what you have done now.","the_end");
+			scr_text("D O  Y O U  F E E L  S A T I S F I E D ?","the_end");
+				scr_text_color(0, 40, c_white, c_white, c_red, c_red);
+				scr_text_shake(0,40);
+			break;
+		
 	}
 	
 }

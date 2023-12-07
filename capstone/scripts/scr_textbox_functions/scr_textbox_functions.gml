@@ -85,20 +85,31 @@ function scr_text(_text){
 			//player
 			case "player":
 				speaker_sprite[page_number] = spr_player_tb;
-				txtb_spr[page_number] = spr_menu;
+				txtb_spr[page_number] = spr_menu_characters;
 				snd[page_number] = snd_char_high;
 				break;
 			//tutotial npc
 			case "tutorial npc":
 				speaker_sprite[page_number] = spr_npc_tb;
-				txtb_spr[page_number] = spr_menu;
+				txtb_spr[page_number] = spr_menu_characters;
 				snd[page_number] = snd_char_low;
 				break;
 			//llama
 			case "llama":
 				speaker_sprite[page_number] = spr_llama_tb;
-				txtb_spr[page_number] = spr_menu;
+				txtb_spr[page_number] = spr_menu_characters;
 				snd[page_number] = snd_char_llama;
+				break;
+			//boss fight
+			case "king":
+				speaker_sprite[page_number] = spr_king_tb;
+				txtb_spr[page_number] = spr_menu_characters;
+				snd[page_number] = snd_char_king;
+				break;
+			//the end
+			case "the_end":
+			txtb_spr[page_number] = spr_menu_spooky;
+			snd[page_number] = snd_char_end;
 				break;
 		}
 	}

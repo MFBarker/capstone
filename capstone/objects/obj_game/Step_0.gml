@@ -1,5 +1,5 @@
 //tp back to hub
-if(keyboard_check(ord("K")) && global.tp_item == true)
+if(keyboard_check(ord("K")) && global.tp_item == true && room != rm_hub)
 {
 	audio_play_sound(snd_teleport,50,false);
 	instance_destroy(player);
@@ -107,6 +107,10 @@ else if(room_get_name(room) == "rm_w1_5"){
 		audio_stop_all();
 		audio_play_sound(snd_w1_5,50,true);
 	}
+}
+else if(room_get_name(room) == "rm_TheDark")
+{
+	audio_stop_all();
 }
 
 //game over & lose life

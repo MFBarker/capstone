@@ -223,6 +223,6 @@ if (global.tb != true)
 	if(isDead)
 	{
 		sprite_index = player_death;
-		audio_play_sound(snd_player_death,50,false);
+		//audio_play_sound(snd_player_death,50,false);
 	}
 }
