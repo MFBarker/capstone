@@ -21,7 +21,7 @@ spr_death = spr_huntress_1_death;
 atk_count = 0;
 
 //control which stage of the animation we are on
-state = ANIM._IDLE;
+state = ANIM._RUN;
 
 //time to wait for
 pause_timer_initial = room_speed * 2;

@@ -19,7 +19,7 @@ spr_hit = spr_huntress_2_hit;
 spr_death = spr_huntress_2_death;
 
 //control which stage of the animation we are on
-state = ANIM._IDLE;
+state = ANIM._RUN;
 
 atk_count = 0;
 

@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "Potions",
-    "path": "folders/Sprites/Platforms/Items/Potions.yy",
+    "path": "folders/Sprites/Items/Potions.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

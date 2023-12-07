@@ -5,11 +5,7 @@ if(room_get_name(room) == "rm_tutorial"){
 	
 }
 //World 1
-if(room_get_name(room) == "rm_w1_2"){
-	instance_destroy(player);
-	room_goto(rm_w1_1);
-}
-else if(room_get_name(room) == "rm_w1_4"){
+if(room_get_name(room) == "rm_w1_4"){
 	instance_destroy(player);
 	room_goto(rm_w1_2);
 }
